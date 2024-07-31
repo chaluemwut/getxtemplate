@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../screen/widget/add_grade_widget.dart';
+import '../../screen/widget/add_student_widget.dart';
+import '../../screen/widget/report_widget.dart';
 import '../controller/home_controller.dart';
 
 class HomeScreen extends GetView<HomeController> {
@@ -8,7 +11,11 @@ class HomeScreen extends GetView<HomeController> {
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
-        children: [],
+        children: [
+          ReportWidget(),
+          AddStudentWidget(),
+          AddGradeWidget()
+        ],
       ),
     );
   }
