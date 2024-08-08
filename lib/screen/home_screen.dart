@@ -12,7 +12,6 @@ class HomeScreen extends GetView<HomeController> {
       appBar: AppBar(),
       body: ListView(
         children: [
-          ReportWidget(),
           AddStudentWidget(),
           AddGradeWidget()
         ],
